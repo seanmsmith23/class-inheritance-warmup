@@ -10,11 +10,19 @@ describe "Square Class" do
 
   describe "#area" do
     it "should give back the area of the square" do
-
     @square = Square.new
     @square.length = 2
 
     expect(@square.area).to eq(4)
+    end
+  end
+
+  describe "#perimeter" do
+    it "should return the perimeter of the square" do
+      @square = Square.new
+      @square.length = 2
+
+      expect(@square.perimeter).to eq(8)
     end
   end
 
