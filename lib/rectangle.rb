@@ -1,17 +1,17 @@
 class Rectangle
   attr_accessor :height, :width
-  @rectangles = 0
+  @@rectangles = 0
 
   def initialize
     Rectangle.increment_count
   end
 
   def self.increment_count
-    @rectangles += 1
+    @@rectangles += 1
   end
 
   def self.counter
-    @rectangles
+    @@rectangles
   end
 
   def area
