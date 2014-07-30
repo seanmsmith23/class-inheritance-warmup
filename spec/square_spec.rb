@@ -1,17 +1,20 @@
 require 'spec_helper'
 
 describe "Square Class" do
-  it "should be initialized with just one length" do
+  it "should be initialized with height and width" do
     @square = Square.new
-    @square.length = 2
+    @square.height = 2
+    @square.width = 2
 
-    expect(@square.length).to eq(2)
+    expect(@square.height).to eq(2)
+    expect(@square.width).to eq(2)
   end
 
   describe "#area" do
     it "should give back the area of the square" do
     @square = Square.new
-    @square.length = 2
+    @square.height = 2
+    @square.width = 2
 
     expect(@square.area).to eq(4)
     end
@@ -20,7 +23,8 @@ describe "Square Class" do
   describe "#perimeter" do
     it "should return the perimeter of the square" do
       @square = Square.new
-      @square.length = 2
+      @square.height = 2
+      @square.width = 2
 
       expect(@square.perimeter).to eq(8)
     end
