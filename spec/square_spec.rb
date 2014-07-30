@@ -8,4 +8,14 @@ describe "Square Class" do
     expect(@square.length).to eq(2)
   end
 
+  describe "#area" do
+    it "should give back the area of the square" do
+
+    @square = Square.new
+    @square.length = 2
+
+    expect(@square.area).to eq(4)
+    end
+  end
+
 end
