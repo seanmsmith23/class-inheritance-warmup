@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ".Rectangle" do
+describe "Rectangle Class" do
   it "will return the width and height of the rectangle" do
     @rectangle = Rectangle.new
 
