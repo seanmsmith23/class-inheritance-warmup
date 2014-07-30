@@ -5,4 +5,8 @@ class Rectangle
     @height * @width
   end
 
+  def perimeter
+    2*(@height + @width)
+  end
+
 end

@@ -20,5 +20,15 @@ describe ".Rectangle" do
       expect(@rectangle.area).to eq(8)
     end
   end
+
+  describe "#perimeter" do
+    it "will return the rectangles perimeter length" do
+      @rectangle = Rectangle.new
+      @rectangle.height = 2
+      @rectangle.width = 4
+
+      expect(@rectangle.perimeter).to eq(12)
+    end
+  end
 end
 
