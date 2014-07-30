@@ -30,5 +30,11 @@ describe "Rectangle Class" do
       expect(@rectangle.perimeter).to eq(12)
     end
   end
+
+  describe "Rectangle#counter" do
+    it "should count the number of instances created" do
+      expect(Rectangle.counter).to eq(3)
+    end
+  end
 end
 

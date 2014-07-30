@@ -1,3 +1,2 @@
 class Square < Rectangle
-
 end
